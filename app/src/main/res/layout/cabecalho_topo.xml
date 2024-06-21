@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="5dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:id="@+id/cabecalho_menu" >
+
+    <ImageButton
+        android:id="@+id/btn_retornar_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_voltar_menu"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_adicionar_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_adicionar_menu"
+            android:backgroundTint="@android:color/transparent" />
+
+        <ImageButton
+            android:id="@+id/btn_fechar_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sair_app_menu"
+            android:backgroundTint="@android:color/transparent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

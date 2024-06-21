@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema base da aplicação -->
+    <style name="Base.Theme.Listacomprasandroid" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/azul_primario</item>
+
+        <item name="colorSecondary">@color/azul_secundario</item>
+
+        <!-- definindo a cor da statusBar -->
+        <item name="android:statusBarColor">@color/azul_primario</item>
+
+    </style>
+
+    <style name="Theme.Listacomprasandroid" parent="Base.Theme.Listacomprasandroid" />
+
+</resources>

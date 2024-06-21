@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="28dp" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_cabecalho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/azul_secundario"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/img_sacola_compra"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/sacola_compra"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_titulo_dialog_cadastrar_lista_compra"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/img_sacola_compra"
+            app:layout_constraintEnd_toEndOf="@id/img_sacola_compra"
+            app:layout_constraintTop_toBottomOf="@id/img_sacola_compra"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txt_label_nome_lista_compra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_label_nome_lista_compra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraint_cabecalho"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/azul_secundario"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto" />
+
+    <EditText
+        android:id="@+id/edt_nome_lista_compra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_label_nome_lista_compra"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:inputType="textPersonName"
+        android:textColor="@color/azul_secundario"
+        android:fontFamily="@font/roboto" />
+
+    <Button
+        android:id="@+id/btn_cadastrar_lista_compra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_btn_cadastrar_lista_compra"
+        android:fontFamily="@font/roboto"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/edt_nome_lista_compra"
+        app:layout_constraintEnd_toEndOf="@id/edt_nome_lista_compra"
+        app:layout_constraintTop_toBottomOf="@id/edt_nome_lista_compra"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        android:padding="12dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lista de Compras</string>
+    <string name="txt_dica">Dica: mantenha o item da lista pressionado para obter mais opções!</string>
+    <string name="txt_titulo_dialog_cadastrar_lista_compra">Cadastrar lista de compra</string>
+    <string name="txt_label_nome_lista_compra">Informe o nome da lista de compra:</string>
+    <string name="txt_btn_cadastrar_lista_compra">Cadastrar</string>
+</resources>
